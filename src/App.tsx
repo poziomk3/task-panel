@@ -15,7 +15,8 @@ import { User } from "./types/userType";
 import { refreshDataTable } from "./api/refreshTaskTable";
 import { refreshUserTable } from "./api/refreshUserTable";
 import EntryPopup from "./components/Pages/EntryPopup/EntryPopup";
-import { PROJECT_ID, SECRET_KEY, USER_ID } from "./API_CREDENTIALS";
+
+// import { PROJECT_ID, SECRET_KEY, USER_ID } from "./API_CREDENTIALS";
 
 export const LoadingContext = createContext<(arg: boolean) => void>(
   (arg) => true
@@ -43,17 +44,18 @@ function App() {
     });
   }, [refreshData]);
 
-  fetch(
-    `https://task-manager-api-401408.lm.r.appspot.com/project/user`,
-    {
-      method: "GET",
-      headers: {
-        "user-id": USER_ID,
-        "secret-key":SECRET_KEY,
-      },
-    }
-  )
-    .then((data) => data.json()).then((data) => {console.log(data)});
+  //wyswietlanie wszytkich projektow
+  // fetch(
+  //   `https://task-manager-api-401408.lm.r.appspot.com/project/user`,
+  //   {
+  //     method: "GET",
+  //     headers: {
+  //       "user-id": USER_ID,
+  //       "secret-key":SECRET_KEY,
+  //     },
+  //   }
+  // )
+  //   .then((data) => data.json()).then((data) => {console.log(data)});
 
   return (
     <LoadingContext.Provider value={setIsLoading}>
