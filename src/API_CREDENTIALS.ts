@@ -1,0 +1,3 @@
+export const USER_ID="u_ubuvjfwlbjklemwpgpja";
+export const SECRET_KEY="hpfwczrhpdwmppxclbvfohijkgkuijgjcbhcithnzaipgxurlkwiijloijdddhuxeiutxiinvyyuqzimetfhapdutlbjlbgpfsihsovntddzkscgdaaveokaqvaqmhlk"
+export const PROJECT_ID="b6f9e3c0-ea2c-47b4-955f-5a4a540f08d6"
